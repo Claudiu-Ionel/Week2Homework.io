@@ -162,9 +162,6 @@ width: 44%;
 /* ----------------------- Desktop ---------------------------- */
 @media (min-width: 1024px){
 /* --------------------Floats------------------------ */
-#grid-floats li.grid-item {
-  overflow: hidden;
-}
 .grid-item:first-child{
   width: 44%;
   max-height: 470px;
@@ -178,13 +175,15 @@ width: 44%;
 }
 .grid-item:first-child:hover h3{
   background-color: #F3B136;
-
 }
 .grid-item:nth-child(n+2){
   width: 19%;
   max-height: 470px;
   float: left;
   height: 470px;
+}
+.grid-item:nth-child(n+2):hover {
+  overflow: auto;
 }
 /* -------------------- Flex ------------------------ */
 #grid-flex {
